@@ -15,5 +15,5 @@ To set up and run this API:
 
 To start the API:
 
-bash
+```bash
 uvicorn api:app --reload
