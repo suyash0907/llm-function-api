@@ -1,0 +1,32 @@
+### Test Case 1: Open Chrome
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"open chrome\" }" http://localhost:8000/execute
+\n        open_chrome()\n        print(\"open_chrome executed successfully.\")\n    except Exception as e:\n        print(f\"Error executing function: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n"}
+
+Response:
+{"function":"open_chrome","code":"\nfrom automation_functions import open_chrome\n\ndef main():\n    try:\n        open_chrome()\n        print(\"open_chrome executed successfully.\")\n    except Exception as e:\n        print(f\"Error executing function: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n"}
+
+###est Case 2: Launch Calculator
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"launch calculator\" }" http://localhost:8000/execute
+
+Respons:
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"launch calculator\" }" http://localhost:8000/execute
+
+###Test Case 3: Start Notepad
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"start notepad\" }" http://localhost:8000/execute
+
+
+Respone:
+{"function":"open_notepad","code":"\nfrom automation_functions import open_notepad\n\ndef main():\n    try:\n        open_notepad()\n        print(\"open_notepad executed successfully.\")\n    except Exception as e:\n        print(f\"Error executing function: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n"}
+
+
+###Test Case 4: Get CPU Usage
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"get cpu usage\" }" http://localhost:8000/execute
+
+Respone:
+{"function":"get_cpu_usage","code":"\nfrom automation_functions import get_cpu_usage\n\ndef main():\n    try:\n        get_cpu_usage()\n        print(\"get_cpu_usage executed successfully.\")\n    except Exception as e:\n        print(f\"Error executing function: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n"}
+
+###Test Case 5: Invalid Command
+curl -X POST -H "Content-Type: application/json" -d "{ \"prompt\": \"invalid command\" }" http://localhost:8000/execute
+
+Respone:
+{"function":"run_command","code":"\nfrom automation_functions import run_command\n\ndef main():\n    try:\n        run_command()\n        print(\"run_command executed successfully.\")\n    except Exception as e:\n        print(f\"Error executing function: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n"}
