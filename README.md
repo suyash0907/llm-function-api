@@ -8,7 +8,7 @@ To set up and run this API:
 
 1.  Clone the repository.
 2.  Create a virtual environment: `python -m venv venv`
-3.  Activate the environment: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (macOS/Linux)
+3.  Activate the environment: `venv\Scripts\activate` (Windows) 
 4.  Install dependencies: `pip install fastapi "uvicorn[standard]" sentence-transformers faiss-cpu psutil tf-keras`
 
 ## Usage
